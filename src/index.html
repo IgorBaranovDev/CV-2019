@@ -8,27 +8,37 @@
   <title>CV</title>
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/media.css">
 </head>
 
 <body>
 
-  <header class="header active">
+  <header class="header active" id="menu">
     <div class="container">
-      <div class="header-row">
+      <div class="header-row" >
         <div class="logo">
           <h1>Igor</h1>
         </div>
-        <div id="menu">
-          <ul class="list-inline">
-            <li><a href="#hello">Hello</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#feedback">Feedback</a></li>
-            <li><a href="#contact">Contact me</a></li>
-          </ul>
-        </div>
+
+        <div class="menu" >
+            <div class="menu__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          
+            <div class="menu__links">
+                <a class="menu__links-item" href="#hello">Hello</a>
+                <a class="menu__links-item" href="#skills">Skills</a>
+                <a class="menu__links-item" href="#experience">Experience</a>
+                <a class="menu__links-item" href="#education">Education</a>
+                <a class="menu__links-item" href="#portfolio">Portfolio</a>
+                <a class="menu__links-item" href="#feedback">Feedback</a>
+                <a class="menu__links-item" href="#contact">Contact me</a>
+            </div>
+        </div>        
+        
       </div>
     </div>
   </header>
@@ -91,6 +101,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./scripts/anchos.js"> </script>
+  <script src="./scripts/menu.js"></script>
 </body>
 
 </html>

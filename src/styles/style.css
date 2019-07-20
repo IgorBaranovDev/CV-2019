@@ -5,6 +5,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background: red;
 }
 
@@ -33,43 +35,111 @@ body {
   height: 40px;
 }
 
+.logo {
+  margin-left: 5%;
+  margin-right: auto;
+}
+
 .logo h1 {
   font-size: 24px;
   font-weight: bold;
 }
 
-.list-inline {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
+.menu {
+  margin-right: 5%;
 }
 
-.list-inline li a {
-  text-decoration: none;
+.menu__icon {
+ display: none;
+ width: 45px;
+ height: 35px;
+ position: relative;
+ cursor: pointer;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #333333;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+top: 26px;
+}
+
+.menu__links-item {
+  display: inline-block;
+  color: #333333;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 10px;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.66;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.list-inline li {
-  margin: 0px 10px;
+.menu__links-item:hover {
+  text-decoration: underline;
 }
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+top: 18px;
+width: 0%;
+left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+top: 18px;
+width: 0%;
+left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+display: block;  
+}
+
+
+
+/*-------------*/
 
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* margin-right: auto;
+  margin-left: auto; */
+  /* padding-left: 15px;
+  padding-right: 15px */
+
 }
 
 #hello {
   margin-top: 80px;
-  border: none;
 }
 
 .section  {
-  padding: 40px 0;
+  display: block;
   background: gold;
   border: 2px solid rgb(253, 93, 93);
 }
