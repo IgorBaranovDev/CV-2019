@@ -1,18 +1,19 @@
 @media screen and (max-width: 1400px) {
     .container {
-        width: 100%;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .container {
-        width: 100%;
+        width: 800%;
     }
 }
 
 @media screen and (max-width: 992px) {
     .container {
         width: 100%;
+        padding: 0;
     }
 
     .menu__icon {
