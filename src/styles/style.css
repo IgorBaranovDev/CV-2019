@@ -42,10 +42,6 @@ body {
   font-weight: bold;
 }
 
-.menu {
-  /* margin-right: 5%; */
-}
-
 .menu__icon {
   display: none;
   width: 45px;
@@ -160,6 +156,7 @@ body {
   display: block;
   text-align: left;
 }
+
 .about-me-row {
   display: flex;
   flex-direction: row;
@@ -172,6 +169,7 @@ body {
   margin-left: 5px;
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.4;
 }
 
 .social-context {
@@ -180,49 +178,106 @@ body {
 
 .social-context a {
   font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.social-links a {
+  font-size: 20px;
+  color: var(--main-bg-color);
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 /*------------------------------*/
 .site-btn.gray-btn {
   background: var(--main-bg-color);
 }
+
 .site-btn.gray-btn {
   color: var(--main-color);
+  display: block;
+  width: 60px;
+  margin: 15px auto;
 }
+
 .site-btn {
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.66;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   font-family: "Lato", sans-serif;
+  text-decoration: none;
+
 }
+
 .site-btn {
-  color: #fff;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   min-width: 170px;
   text-align: center;
   padding: 15px;
-  display: inline-block;
   border: none;
   border-radius: 2px;
 }
 
-.site-btn.gray-btn:hover, .site-btn.gray-btn.hover {
+.site-btn.gray-btn:hover,
+.site-btn.gray-btn.hover {
   -webkit-box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
   box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
   color: #252525;
 }
+
 /*------------------------------*/
 
+/*-------------Skills--------------*/
+
+.skills,
+.aducation {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+.skils-list {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
+}
+
+.collum-skills p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.2;
+}
+/*-------------END-Skills--------------*/
+
+.skils-title,
+.aducation-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rows-aducation {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.rows-aducation p {
+  margin-left: 15px; 
+}
 
 .about-me-photo {
   width: 50%;
 }
 
 .about-me-photo img {
+  display: block;
   width: 420px;
+  margin: 46px auto;
 }
 
 .section {
