@@ -6,7 +6,17 @@
 
 @media screen and (max-width: 1200px) {
     .container {
-        width: 800%;
+        width: 80%;
+    }
+
+    .header-row {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .logo,
+    .menu {
+        margin: 0;
     }
 }
 
@@ -16,6 +26,11 @@
         padding: 0;
     }
 
+    .header-row {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .menu__icon {
         display: inline-block;
     }
@@ -23,28 +38,76 @@
     .menu__links {
         position: fixed;
         display: none;
+        top: 0;
+        height: 100vh;
         right: 0;
         left: 0;
-        height: 100vh;
-        margin-top: 20px;
-        background-color: rgb(140, 107, 107);
+        margin-top: 80px;
+        background-color: #e89b3f;
         z-index: 1000;
         overflow: auto;
     }
 
     .menu__links-item {
         display: block;
-        padding: 20px 0;
-        text-align: center;
         margin: 0 auto;
-        color: #ffffff;
-        border-bottom: 1px solid;
+        padding: 10% 0;
+        text-align: center;
+        color: #333333;
+        font-size: 26px;
+        font-weight: 700;
+        width: 180px;
+    }
+
+    .menu__links-item a:hover {
+        background: #92dde4;
+    }
+
+    .hello {
+        justify-content: space-around;
+    }
+
+    .about-me,
+    .about-me-photo {
+        width: 45%;
+    }
+
+    .about-me-photo img {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .container {
         width: 100%;
+    }
+
+    .hello {
+        flex-direction: column;
+    }
+
+    .about-me,
+    .about-me-photo,
+    .skills,
+    .education {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .about-me-photo img {
+        width: 100%;
+        margin: 46px auto;
+    }
+
+    .skills-title,
+    .education-title {
+        text-align: center;
+    }
+
+    .skills,
+    .education {
+        display: flex;
+        flex-direction: column;
     }
 }
 
