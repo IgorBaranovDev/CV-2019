@@ -22,15 +22,6 @@ body {
   width: 90%;
 }
 
-.section:last-child:after {
-  background-color: var(--main-color);
-  display: none;
-  margin: 0 auto;
-  content: "";
-  height: 2px;
-  width: 90%;
-}
-
 .header.active {
   -webkit-box-shadow: 0 5px 10px rgba(37, 37, 37, 0.1);
   box-shadow: 0 5px 10px rgba(37, 37, 37, 0.1);
@@ -291,9 +282,10 @@ display: block;
 .education {
   display: grid;
   grid-template-columns: 35% 65%;
+  margin: 40px 0;
 }
 
-.skils-list {
+.skills-list {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-column-gap: 5%;
@@ -310,7 +302,7 @@ display: block;
   color: var(--main-bg-color);
 }
 
-.skils-title,
+.skills-title,
 .education-title {
   display: flex;
   flex-direction: column;
@@ -329,7 +321,32 @@ display: block;
 
 /*-------------END SKILLS--------------*/
 
+/*-------------PORTFOLIO--------------*/
 
+.works {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.works-item {
+  margin: 10px;;
+}
+
+.works-item:hover {
+  -webkit-box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
+  box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
+  color: #252525;
+}
+
+.works img {
+  width: 100%;
+}
+
+/*-------------END PORTFOLIO--------------*/
+
+.section:last-of-type:after {
+  display: none;
+}
 
 footer {
   background: var(--main-bg-color);

@@ -75,6 +75,32 @@
     .about-me-photo img {
         width: 100%;
     }
+
+    .skills-title,
+    .education-title {
+        grid-area: title;
+    }
+
+    .skills-list,
+    .education-list {
+        grid-area: list;
+    }
+
+    .skills,
+    .education {
+        grid-template-columns: 5% 35% 55% 5%;
+        grid-template-areas: ". title list .";
+    }
+
+    .portfolio {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .works {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -115,10 +141,15 @@
     .container {
         width: 100%;
     }
+    
+    .works {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .container {
         width: 100%;
     }
+
 }
