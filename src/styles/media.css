@@ -138,12 +138,34 @@
 }
 
 @media screen and (max-width: 480px) {
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .menu__icon {
+        width: 40px;
+    }
+    
     .container {
         width: 100%;
     }
     
     .works {
         grid-template-columns: 1fr;
+    }
+
+    .collum-skills p,
+    .rows-education p,
+    .social-context a {
+        font-size: 11px;
+    }
+
+    .social-links a {
+        margin: 0 5px;
+    }
+
+    .social-title {
+        font-size: 16px;
     }
 }
 
