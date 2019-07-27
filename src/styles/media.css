@@ -77,17 +77,20 @@
     }
 
     .skills-title,
-    .education-title {
+    .education-title,
+    .contact-title {
         grid-area: title;
     }
 
     .skills-list,
-    .education-list {
+    .education-list,
+    .js-footer-form {
         grid-area: list;
     }
 
     .skills,
-    .education {
+    .education,
+    .contact {
         grid-template-columns: 5% 35% 55% 5%;
         grid-template-areas: ". title list .";
     }
@@ -115,7 +118,8 @@
     .about-me,
     .about-me-photo,
     .skills,
-    .education {
+    .education,
+    .contact {
         width: 85%;
         margin: 0 auto;
     }
@@ -126,14 +130,20 @@
     }
 
     .skills-title,
-    .education-title {
+    .education-title,
+    .contact-title {
         text-align: center;
     }
 
     .skills,
-    .education {
+    .education,
+    .contact {
         display: flex;
         flex-direction: column;
+    }
+
+    .form-wrapper {
+        margin-bottom: 20px; 
     }
 }
 
@@ -166,7 +176,18 @@
 
     .social-title {
         font-size: 16px;
-    }
+    }   
+      
+      .form-wrapper {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-areas: ". name ."
+                             ". email ."
+                             ". field-message ."    
+                             ".submit-holder .";
+        grid-row-gap: 15px;
+        justify-items: center;
+      }
 }
 
 @media screen and (max-width: 320px) {

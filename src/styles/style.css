@@ -234,26 +234,21 @@ display: block;
 
 /*-------------BUTTON DOUNLOAD CV-----------------*/
 
-.site-btn.gray-btn {
-  background: var(--main-bg-color);
+.site-btn {
+  font-size: 18px;
+  line-height: 1.66;
+  text-transform: uppercase;
   font-weight: 700;
+  text-decoration: none;
+  background: var(--main-bg-color);
 }
 
 .site-btn.gray-btn {
   color: var(--main-color);
   display: block;
   width: 60px;
+  font-size: 16px;
   margin: 15px auto;
-}
-
-.site-btn {
-  font-size: 18px;
-  line-height: 1.66;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-family: "Lato", sans-serif;
-  text-decoration: none;
-
 }
 
 .site-btn {
@@ -267,8 +262,7 @@ display: block;
   border-radius: 2px;
 }
 
-.site-btn.gray-btn:hover,
-.site-btn.gray-btn.hover {
+.site-btn:hover {
   -webkit-box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
   box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
   color: #252525;
@@ -347,4 +341,59 @@ display: block;
 footer {
   background: var(--main-bg-color);
   padding: 15px 0 15px;
+}
+/*-----------------CONTACT--------------------------*/
+.contact {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  margin: 40px 0;
+}
+
+.contact-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-name {
+  grid-area: name;
+}
+
+.form-email {
+  grid-area: email;
+}
+
+.form-field-message {
+  grid-area: field-message;
+}
+
+.submit-holder {
+  grid-area: submit-holder;
+}
+
+.form-wrapper {
+  display: grid;
+  grid-template-columns: 45% 5% 45%;
+  grid-template-areas: "name . field-message"
+                       "email . field-message"
+                       ". . submit-holder";
+}
+
+.form-wrapper textarea,
+.form-wrapper input {
+  font-size: 14px; 
+  font-family: "Lato", sans-serif;
+   line-height: 1.4;
+}
+
+.form-wrapper textarea {
+  height: 130px;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  resize: none;
+  display: block;
+  border-radius: 2px;
 }
