@@ -35,7 +35,6 @@
             <a class="menu__links-item" href="#skills">Skills</a>
             <a class="menu__links-item" href="#education">Education</a>
             <a class="menu__links-item" href="#portfolio">Portfolio</a>
-            <a class="menu__links-item" href="#feedback">Feedback</a>
             <a class="menu__links-item" href="#contact">Contact me</a>
           </div>
         </div>
@@ -101,7 +100,7 @@
             </div>
           </div>
           <div class="about-me-cv-dounload">
-            <a href="./download/example.pdf" class="site-btn gray-btn">Download cv</a>
+            <a href="./src/accet/output.pdf" class="site-btn gray-btn" target="_blank">Download cv</a>
           </div>
         </div>
         <div class="about-me-photo">
@@ -241,14 +240,6 @@
     </div>
   </section>
 
-  <section id="feedback" class="section">
-    <div class="container">
-      <div class="feedback">
-        <p>feedback</p>
-      </div>
-    </div>
-  </section>
-
   <section id="contact" class="section">
     <div class="container">
       <div class="contact">
@@ -259,31 +250,31 @@
               happen! Drop me a letter and start your project right now! Just do it.</p>
           </div>
         </div>
-        <form action="#" class="wow slideInRight js-footer-form">
-          <div class="form-wrapper">
+        <form class="wow slideInRight js-footer-form" action="send.php" method="post>
+          <!-- <div class="form-wrapper" > 
 
             <div class="form-name">
-              <input class="form-field js-field-name" type="text" placeholder="Name" required="">
+              <input class="form-field js-field-name" type="text" name="first_name" placeholder="Name" required="">
               <span class="form-validation"></span>
               <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
             </div>
 
             <div class="form-email">
-              <input class="form-field js-field-email" type="email" placeholder="E-mail" required="">
+              <input class="form-field js-field-email" type="email" name="email" placeholder="E-mail" required="">
               <span class="form-validation"></span>
               <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
             </div>
 
             <div class="form-field-message">
-              <textarea class="form-field js-field-message" placeholder="Message" required=""></textarea>
+              <textarea class="form-field js-field-message" name="message" placeholder="Message" required=""></textarea>
               <span class="form-validation"></span>
             </div>
 
             <div class="submit-holder">
-              <input class="site-btn gray-btn" type="submit" value="Send message">
+              <input class="site-btn gray-btn" type="submit" name="submit" value="Send message">
             </div>
 
-          </div>
+          <!-- </div> -->
         </form>
 
       </div>
@@ -293,7 +284,7 @@
   <footer>
     <div class="container">
       <div class="copyright">
-        <p>Copyright 2019 Igor.</p>
+        <p>	&copy; 2019 Igor.</p>
       </div>
     </div>
   </footer>
@@ -301,6 +292,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./src/scripts/anchos.js"> </script>
   <script src="./src/scripts/menu.js"></script>
+  <script src="./src/scripts/hiddenHeader.js"></script>
 </body>
 
 </html>

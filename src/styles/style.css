@@ -23,9 +23,15 @@ body {
 }
 
 .header.active {
+  opacity: 1;
   -webkit-box-shadow: 0 5px 10px rgba(37, 37, 37, 0.1);
   box-shadow: 0 5px 10px rgba(37, 37, 37, 0.1);
   border-bottom-color: transparent;
+}
+
+header.none {
+  /* display: none; */
+  opacity: 0;
 }
 
 .header {
@@ -319,7 +325,8 @@ display: block;
 }
 
 .works-item {
-  margin: 10px;;
+  margin: 10px;
+  overflow: hidden;
 }
 
 .works-item:hover {
@@ -328,8 +335,15 @@ display: block;
   color: #252525;
 }
 
-.works img {
+.works img,
+.works a {
   width: 100%;
+}
+
+.works-item img:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    opacity: 0.8;
 }
 
 /*-------------END PORTFOLIO--------------*/
@@ -342,6 +356,9 @@ footer {
   background: var(--main-bg-color);
   padding: 15px 0 15px;
 }
+
+
+
 /*-----------------CONTACT--------------------------*/
 .contact {
   display: grid;
@@ -383,7 +400,14 @@ footer {
 .form-wrapper input {
   font-size: 14px; 
   font-family: "Lato", sans-serif;
-   line-height: 1.4;
+  line-height: 1.4;
+}
+
+.form-name input,
+.form-email input,
+.form-field-message textarea {
+  padding: 4px;
+  font-style: italic;
 }
 
 .form-wrapper textarea {
