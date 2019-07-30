@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
 
     $.ajax({
       type: "POST",
-      url: "/src/scripts/contact.php",
+      url: "/contact.php",
       data: str,
       success: function (msg) {
         if (msg == 'OK') {
