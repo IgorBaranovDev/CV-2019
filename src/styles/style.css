@@ -419,6 +419,7 @@ display: block;
 footer {
   background: var(--main-bg-color);
   padding: 15px 0 15px;
+  margin-top: 40px;
 }
 
 .copyright {
