@@ -352,13 +352,6 @@ display: block;
   display: none;
 }
 
-footer {
-  background: var(--main-bg-color);
-  padding: 15px 0 15px;
-}
-
-
-
 /*-----------------CONTACT--------------------------*/
 .contact {
   display: grid;
@@ -420,4 +413,14 @@ footer {
   resize: none;
   display: block;
   border-radius: 2px;
+}
+
+
+footer {
+  background: var(--main-bg-color);
+  padding: 15px 0 15px;
+}
+
+.copyright {
+  text-align: center;
 }
