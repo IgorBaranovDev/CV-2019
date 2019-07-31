@@ -5,7 +5,11 @@ jQuery(document).ready(function ($) {
 
     $.ajax({
       type: "POST",
+<<<<<<< HEAD
       url: "https://src/scripts/contact.php",
+=======
+      url: "./src/scripts/contactform.js",
+>>>>>>> ee729633d9dc0c88686c86795a1d082fcfaa2b42
       data: str,
       success: function (msg) {
         if (msg == 'OK') {
