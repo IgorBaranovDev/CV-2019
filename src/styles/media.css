@@ -131,13 +131,15 @@
 
     .skills-title,
     .education-title,
-    .contact-title {
+    .contact-title,
+    .sertificate-title {
         text-align: center;
     }
 
     .skills,
     .education,
-    .contact {
+    .contact,
+    .sertificate {
         display: flex;
         flex-direction: column;
     }
@@ -145,6 +147,11 @@
     .form-wrapper {
         margin-bottom: 20px; 
     }
+
+    .sertificate-item img {
+        width: 80%;
+        margin: 26px auto;
+      }
 }
 
 @media screen and (max-width: 480px) {
