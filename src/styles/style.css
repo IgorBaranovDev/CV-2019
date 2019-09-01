@@ -2,6 +2,7 @@
   --main-bg-color: #b3f79b;
   --main-color: #2c2b2b;
   --next-color: rgb(190, 8, 8);
+  --hover-efect-icons: #846ef7;
 }
 
 body {
@@ -234,11 +235,20 @@ display: block;
   font-weight: 600;
 }
 
+.social-context a:hover { 
+  color: var(--hover-efect-icons);
+  -webkit-text-stroke: 0.2px #000000;
+}
+
 .social-links a {
   font-size: 20px;
   color: var(--main-bg-color);
   margin: 0 10px;
   text-decoration: none;
+}
+
+.social-links a:hover {
+  color: var(--hover-efect-icons);
 }
 
 .about-me-photo {
