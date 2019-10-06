@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/igor82bv/CV-2019.git"
+    "url": "git+https://github.com/igorbaranovdev/CV-2019.git"
   },
   "author": "Baranov Igor",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/igor82bv/CV-2019/issues"
+    "url": "https://github.com/igorbaranovdev/CV-2019/issues"
   },
-  "homepage": "https://github.com/igor82bv/CV-2019#readme"
+  "homepage": "https://github.com/igorbaranovdev/CV-2019#readme"
 }
