@@ -1,205 +1,204 @@
 @media screen and (max-width: 1400px) {
-    .container {
-        width: 80%;
-    }
+  .container {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .container {
-        width: 80%;
-    }
+  .container {
+    width: 80%;
+  }
 
-    .header-row {
-        width: 100%;
-        margin: 0 auto;
-    }
+  .header-row {
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    .logo,
-    .menu {
-        margin: 0;
-    }
+  .logo,
+  .menu {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .container {
-        width: 100%;
-        padding: 0;
-    }
+  .container {
+    width: 100%;
+    padding: 0;
+  }
 
-    .header-row {
-        width: 80%;
-        margin: 0 auto;
-    }
+  .header-row {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    .menu__icon {
-        display: inline-block;
-    }
+  .menu__icon {
+    display: inline-block;
+  }
 
-    .menu__links {
-        position: fixed;
-        display: none;
-        top: 0;
-        height: 100vh;
-        right: 0;
-        left: 0;
-        margin-top: 80px;
-        background-color: #e89b3f;
-        z-index: 1000;
-        overflow: auto;
-    }
+  .menu__links {
+    position: fixed;
+    display: none;
+    top: 0;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    margin-top: 80px;
+    background-color: #e89b3f;
+    z-index: 1000;
+    overflow: auto;
+  }
 
-    .menu__links-item {
-        display: block;
-        margin: 0 auto;
-        padding: 10% 0;
-        text-align: center;
-        color: #333333;
-        font-size: 26px;
-        font-weight: 700;
-        width: 180px;
-    }
+  .menu__links-item {
+    display: block;
+    margin: 0 auto;
+    padding: 10% 0;
+    text-align: center;
+    color: #333333;
+    font-size: 26px;
+    font-weight: 700;
+    width: 180px;
+  }
 
-    .menu__links-item a:hover {
-        background: #92dde4;
-    }
+  .menu__links-item a:hover {
+    background: #92dde4;
+  }
 
-    .hello {
-        justify-content: space-around;
-    }
+  .hello {
+    justify-content: space-around;
+  }
 
-    .about-me,
-    .about-me-photo {
-        width: 45%;
-    }
+  .about-me,
+  .about-me-photo {
+    width: 45%;
+  }
 
-    .about-me-photo img {
-        width: 100%;
-    }
+  .about-me-photo img {
+    width: 100%;
+  }
 
-    .skills-title,
-    .education-title,
-    .contact-title {
-        grid-area: title;
-    }
+  .skills-title,
+  .education-title,
+  .contact-title {
+    grid-area: title;
+  }
 
-    .skills-list,
-    .education-list,
-    .js-footer-form {
-        grid-area: list;
-    }
+  .skills-list,
+  .education-list,
+  .js-footer-form {
+    grid-area: list;
+  }
 
-    .skills,
-    .education,
-    .contact {
-        grid-template-columns: 5% 35% 55% 5%;
-        grid-template-areas: ". title list .";
-    }
+  .skills,
+  .education,
+  .contact {
+    grid-template-columns: 5% 35% 55% 5%;
+    grid-template-areas: '. title list .';
+  }
 
-    .portfolio {
-        width: 80%;
-        margin: 0 auto;
-    }
+  .portfolio {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    .works {
-        grid-template-columns: 1fr 1fr;
-    }
-
+  .works {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 
-    .hello {
-        flex-direction: column;
-    }
+  .hello {
+    flex-direction: column;
+  }
 
-    .about-me,
-    .about-me-photo,
-    .skills,
-    .education,
-    .contact {
-        width: 85%;
-        margin: 0 auto;
-    }
+  .about-me,
+  .about-me-photo,
+  .skills,
+  .education,
+  .contact {
+    width: 85%;
+    margin: 0 auto;
+  }
 
-    .about-me-photo img {
-        width: 100%;
-        margin: 46px auto;
-    }
+  .about-me-photo img {
+    width: 100%;
+    margin: 46px auto;
+  }
 
-    .skills-title,
-    .education-title,
-    .contact-title,
-    .sertificate-title {
-        text-align: center;
-    }
+  .skills-title,
+  .education-title,
+  .contact-title,
+  .certificate-title {
+    text-align: center;
+  }
 
-    .skills,
-    .education,
-    .contact,
-    .sertificate {
-        display: flex;
-        flex-direction: column;
-    }
+  .skills,
+  .education,
+  .contact,
+  .certificate {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .form-wrapper {
-        margin-bottom: 20px; 
-    }
+  .form-wrapper {
+    margin-bottom: 20px;
+  }
 
-    .sertificate-item img {
-        width: 80%;
-        margin: 26px auto;
-      }
+  .certificate-item img {
+    width: 80%;
+    margin: 26px auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .logo h1 {
-        font-size: 20px;
-    }
+  .logo h1 {
+    font-size: 20px;
+  }
 
-    .menu__icon {
-        width: 40px;
-    }
-    
-    .container {
-        width: 100%;
-    }
-    
-    .works {
-        grid-template-columns: 1fr;
-    }
+  .menu__icon {
+    width: 40px;
+  }
 
-    .collum-skills p,
-    .rows-education p,
-    .social-context a {
-        font-size: 11px;
-    }
+  .container {
+    width: 100%;
+  }
 
-    .social-links a {
-        margin: 0 5px;
-    }
+  .works {
+    grid-template-columns: 1fr;
+  }
 
-    .social-title {
-        font-size: 16px;
-    }   
-      
-      .form-wrapper {
-        display: grid;
-        grid-template-columns: 5% 90% 5%;
-        grid-template-areas: ". name ."
-                             ". email ."
-                             ". field-message ."    
-                             ".submit-holder .";
-        grid-row-gap: 15px;
-        justify-items: center;
-      }
+  .collum-skills p,
+  .rows-education p,
+  .social-context a {
+    font-size: 11px;
+  }
+
+  .social-links a {
+    margin: 0 5px;
+  }
+
+  .social-title {
+    font-size: 16px;
+  }
+
+  .form-wrapper {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas:
+      '. name .'
+      '. email .'
+      '. field-message .'
+      '.submit-holder .';
+    grid-row-gap: 15px;
+    justify-items: center;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .container {
-        width: 100%;
-    }
-
+  .container {
+    width: 100%;
+  }
 }
