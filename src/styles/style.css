@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif, Courier, monospace;
+  font-family: "Muli", sans-serif, Courier, monospace;
   color: var(--main-color);
 }
 
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
   display: block;
   margin: 0 auto;
-  content: '';
+  content: "";
   height: 2px;
   width: 90%;
 }
@@ -130,7 +130,7 @@ header.none {
 .menu__links-item:after {
   background-color: var(--main-color);
   display: block;
-  content: '';
+  content: "";
   height: 2px;
   width: 0%;
   left: 50%;
@@ -254,9 +254,8 @@ header.none {
 
 .about-me-photo img {
   display: block;
-  width: 420px;
-  margin: 46px auto;
-  border: 1px solid;
+  width: 300px;
+  margin: 16px auto;
   border-color: var(--main-color);
 }
 
@@ -268,7 +267,14 @@ header.none {
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
-  background: var(--main-bg-color);
+  background: linear-gradient(
+    to right,
+    var(--main-bg-color) 50%,
+    transparent 50%
+  );
+  background-size: 200% 100%;
+  background-position: right;
+  /* transition: background-position 0.5s; */
 }
 
 .site-btn.gray-btn {
@@ -293,6 +299,8 @@ header.none {
 }
 
 .site-btn:hover {
+  background-position: left;
+
   -webkit-box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
   box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
   color: var(--hover-efect-icons);
@@ -420,15 +428,15 @@ header.none {
   display: grid;
   grid-template-columns: 45% 5% 45%;
   grid-template-areas:
-    'name . field-message'
-    'email . field-message'
-    '. . submit-holder';
+    "name . field-message"
+    "email . field-message"
+    ". . submit-holder";
 }
 
 .form-wrapper textarea,
 .form-wrapper input {
   font-size: 14px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.4;
 }
 
